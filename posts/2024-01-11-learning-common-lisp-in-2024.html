@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang=en>
+ <head>
+  <title>Lily Hughes-Robinson - Learning Common Lisp in 2024</title>
+  <link rel=stylesheet href=/assets/default.css>
+  <link rel=stylesheet
+        href=https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css>
+  <script
+          src=https://kit.fontawesome.com/f0c62b9eac.js
+          crossorigin=anonymous></script>
+  <meta charset=utf-8>
+  <meta name=viewport
+        content="width=device-width, initial-scale=1">
+  <meta name=description
+        content="My thoughts on learning a niche language">
+  <meta name=og:type content=article>
+  <meta name=og:title
+        content="Learning Common Lisp in 2024">
+  <meta name=dog:description
+        content="My thoughts on learning a niche language">
+  <meta name=twitter:card
+        content=summary_large_image>
+  <meta name=twitter:site content=@oaguy1>
+  <meta name=twitter:creator content=@oaguy1>
+  <meta name=twitter:title
+        content="Learning Common Lisp in 2024">
+  <meta name=twitter:description
+        content="My thoughts on learning a niche language">
+ </head>
+ <body>
+  <main class=container>
+   <nav>
+    <ul>
+     <li><strong>Lily Hughes-Robinson</strong>
+    </ul>
+    <ul>
+     <li><a href="/">Home</a>
+     <li><a href=/about.html>About</a>
+     <li><a href=https://tech.lgbt/@Lilaclily><i class="fa-brands fa-mastodon"></i></a>
+     <li><a href=https://github.com/oaguy1><i class="fa-brands fa-github"></i></a>
+    </ul>
+   </nav>
+   <header>
+    <hgroup>
+     <h2>Learning Common Lisp in 2024</h2>
+     <h4>My thoughts on learning a niche language</h4>
+     <h5>2024-01-29</h5>
+    </hgroup>
+    <section><p>Deciding to invest in a new language is serious business. It takes quite a bit of time to become proficient in any new language and that is time one could have invested in learning other new skills or simply recovering from a busy work schedule. This mental calculus is somewhat more difficult when it comes to investing in a niche language such as Common Lisp, where it is unlikely I will ever have a professional use for the language.</p>
+
+<p>Some would say that it is frivolous to learn something so out of left field without chance for some real reward. To them I would say learning for learning sake is absolutely a worthwhile investment in its own right. For me, learning something completely different from my every day work as a python developer has been incredibly rewarding and intellectually stimulating. I went into this exercise not expecting to get a financial/professional reward. What I have gotten instead is a rekindled obsession with the Lisp family of languages.</p>
+
+<p>I went about learning Common Lisp in the most traditional way possible: with a book. While the prevailing wisdom these days is to start with <em>Practical Common Lisp</em> by Peter Seibel, I wanted something contemporary with one of my target Common Lisp implementations, Macintosh Common Lisp 4.2 for, Mac OS 9. This meant going back further to one of the first books on the ANSI Common Lisp standard, <em>ANSI Common Lisp</em> from 1995 by Paul Graham. This book tends to be overlooked these days for some of its more modern cousins, but I think it was an excellent read, even in 2023 when I read it. The code snippets where clear and correct and the prose of the book was straight forward and very readable. I honestly devoured the book with some reading sessions stretching over 100 pages. I was lucky and got my copy used for a decent price, but it can some as expensive as a modern computer science textbook.</p>
+
+<p>For the curious, some of the modern criticism of the book if that its code is somewhat non-idiomatic by today's standards in that it uses short variable names and relies heavily on recursion. It also covers a great many topics in only 286 pages of text (excluding the appendices) and therefore doesn't go into great depth on any one subject. I believe that these are not strict weaknesses. Getting a general overview of as much of the language as possible in a single text is extremely useful. What is more, I've found myself reaching for my copy of the book over my search engine because there is something satisfying about flipping through an index to find the relevant pages. Does this mean I would still offer this book at the essential kicking off point? Probably not, but I have found it extremely enjoyable and the book helped me with some of my first coding tasks in Common Lisp.</p>
+
+<p>I haven't stopped with <em>ANSI Common Lisp</em>, I've also picked up a book specifically about programming macros. Macros, for the uninitiated, are a mechanism for writing code that generates more code. This allows for new programming constructs to be added to the language by the programmer rather than the language implementer. This is one of the most power aspects of most Lisp dialects and is therefore I picked up <em>Let Over Lambda</em> by Doug Hoyte. Hoyte himself acknowledges his book builds on <em>On Lisp</em>, also by Paul Graham, but copies of <em>On Lisp</em> go for around $200 for a physical copy and I really prefer that to reading on a screen. Therefore, <em>Let Over Lambda</em> is currently my guide to macros until it goes too over my head or I find something better.</p>
+
+<p>Reading about a language is one thing, coding in it is quite another. I started with <a href="https://adventofcode.com/2023" >Advent of Code 2023</a>, where I completed the first 6 programming problems before tapping out on day 7. I've made it further in the past using my strongest language, Python, but focused on solving the problems using only Common Lisp and the <code>uiop</code> library for file handling. Getting a chance to truly put write some actual Lisp code was enlightening. I did my best to iterate through lists using mapping functions whenever possible and to think of things in a functional way. Still, I did end up dipping my toe into the Common Lisp Object System (CLOS) for some of the later problems, which gave me the foundation I needed for my next project.</p>
+
+<p>After deciding I was done with Advent of Code, I moved onto my first personal project in Common Lisp, a static site generator called <a href="https://github.com/oaguy1/cl-yassg" >cl-yassg</a> or Yet Another Static Site Generator. This took my understanding of working with files to the next level as I was not only inputting an entire directory tree, but parsing the markdown front matter myself because no Common Lisp libraries specifically parse that (yes, YAML parsers exist, but one still needs to separate out the YAML from the markdown). I view cl-yassg as almost feature complete apart from test.</p>
+
+<p>From here things have gone slightly off the rails. I've taken a break from Common Lisp to look at other Lisp dialects such as Scheme. I've picked up a copy of the famous <em>The Structures and Interpretation of Computer Programs</em> and have started reading through it. I want to eventually implement a minimal Lisp dialect either in Scheme or Common Lisp. I also learned <a href="https://fennel-lang.org" >Fennel</a> in an afternoon along with <a href="https://www.love2d.org" >LÖVE</a> and wrote a <a href="https://github.com/oaguy1/pong-fennel" >very simple single player Pong game</a>. More about the Pong game in another post, but writing a game was an excellent way for me to build something outside my comfort zone while learning a new minimal Lisp.</p>
+
+<p>Where do I plan to go from here? I plan on continuing with cl-yassg until it is complete, then I need find another project for Common Lisp. Feel free to ping me on Mastodon with ideas! I also plan on continuing with Fennel and LÖVE, perhaps participating in the annual Lisp Game Jam in May. Now I feel comfortable in one Lisp dialect, the world of Lisp has opened up and I plan on exploring as much as I can without losing focus.</p>
+
+    </section>
+   </header>
+  </main>
+ </body>
+</html>

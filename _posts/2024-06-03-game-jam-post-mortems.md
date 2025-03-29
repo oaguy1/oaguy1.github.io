@@ -56,4 +56,4 @@ Getting to implement these design patterns in my game made me feel like I had gr
 
 I definitely want to participate in more jams! I had a blast working on these two jams and learned an incredible amount about game dev in the process. I haven't picked my next jam, although I believe there will be a Fall LISP Game Jam in 2024. Itch.io has a plethora of game jams going on at any time, so I plan to take advantage of this when the figurative itch arises to make a complete game in a short period of time.
 
-I also plan on continuing to work on the game I started in the [previous post](2024-01-30-build-a-stupid-game.html). I've added so much since I last wrote, from a player who moves to rocks to break and gems to collect. I feel like I am getting close to releasing that game soon. Once I do, I will blog about what I learned.
+I also plan on continuing to work on the game I started in the [previous post](/posts/build-a-stupid-game/). I've added so much since I last wrote, from a player who moves to rocks to break and gems to collect. I feel like I am getting close to releasing that game soon. Once I do, I will blog about what I learned.

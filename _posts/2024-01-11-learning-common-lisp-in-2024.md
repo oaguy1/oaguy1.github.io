@@ -3,7 +3,8 @@ layout: post
 title:  "Learning Common Lisp in 2024"
 author: oaguy1
 date:   2024-01-11 22:35:13 -0500
-categories: commonlisp lisp
+categories: programming
+tags: programming commonlisp lisp
 ---
 
 Deciding to invest in a new language is serious business. It takes quite a bit of time to become proficient in any new language, and that's time one could have invested in learning other new skills or simply recovering from a busy work schedule. This mental calculus is somewhat more difficult when it comes to investing in a niche language such as Common Lisp, where it is unlikely I will ever have a professional use for the language.

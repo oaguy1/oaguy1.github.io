@@ -4,6 +4,7 @@ title:  "Try Building a Game"
 author: oaguy1
 date:   2024-02-14 00:43:44 -0500
 categories: gamedev
+tags: gamedev lisp
 ---
 
 I do not make games for a living. I spend my time at work constructing data pipelines and building web APIs. One could reasonably ask why I would bother making a simple game that, most likely, only I will ever play. The answer is that building games is hard, even a simple game like Pong or Breakout. There is quite a bit to manage and it makes for a fun distraction for an afternoon while the toddler sleeps.
@@ -20,7 +21,7 @@ Pong is nice, but what about something meatier? After finishing Pong, I struggle
 
 It started [this article](https://www.freecodecamp.org/news/how-to-make-your-own-procedural-dungeon-map-generator-using-the-random-walk-algorithm-e0085c8aa9a/?fbclid=IwAR2nikCsf9X3MSNZb-c9zfeJvF9heHoX7ksAYNAKNZJ_yHV-tEimo9FcKlw), which gave the basics of generating a procedurally generated dungeon. The most important piece from that article was the fact that it utilized a [random walk algorithm](https://en.wikipedia.org/wiki/Random_walk) to achieve the random state without disconnected pieces of the level. Without diving into the code in the article, I just took the basic concepts and was able to implement it in fennel for LÖVE. I started with printing out the nested tables (Lua's basic data structure stand-in for array and dictionaries) and representing the dungeon area with 1's and 0's. This gave me enough of an idea about shape before adding any proper rendering. I have the basic random walk code below. Please note, fennel does not support breaking out of a loop, therefore the bizarre handling of out-of-bounds indices.
 
-```clojure
+```fennel
 (local dirs {:up [-1 0] :down [1 0] :left [0 -1] :right [0 1]})
 
 (fn init-map []
@@ -68,7 +69,7 @@ It started [this article](https://www.freecodecamp.org/news/how-to-make-your-own
 ```
 Next was tiling the level. For this, I used a simple but clever auto-tiling method where I labeled all my tiles by which sides were closed, using "l" and "r" for left and right and "t" and "b" for top and bottom. I kept the naming consistent and in the same order. I then walked around the map, looking for which sides were closed off and generating the appropriate matching key. For example, if the left and top sides were closed off, the matching key would be "lt." I feel it is easier to look at code than explain an algorithm in plain English, so the relevant code is included below:
 
-```clojure
+```fennel
 (local bg-tiles {:lt 1 :t 2 :rt 3 :l 7 :f 8 :r 9 :lb 13 :b 14 :rb 15 :lr 20 :tb 22 :lrt 28 :lrb 29 :ltb 30 :rtb 31 :lrtb 32})
 
 (fn auto-tile [tile-map]

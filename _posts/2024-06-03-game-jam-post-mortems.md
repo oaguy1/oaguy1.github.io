@@ -4,6 +4,7 @@ title:  "I Did Two Game Jams, Here's What I Learned"
 author: oaguy1
 date:   2024-06-03 06:19:16 -0500
 categories: gamedev
+tags: gamedev lisp
 ---
 
 I delved into  game dev in January 2024 and since have participated in two game jams. What's a game jam? For the uninitiated, a game jam is a competition where you create a game from scratch within a limited amount of time and often within a set theme or rules. These constraints are an amazing way to stretch the boundaries of what you think is possible and really encourages creativity.

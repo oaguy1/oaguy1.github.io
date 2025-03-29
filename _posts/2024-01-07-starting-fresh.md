@@ -3,7 +3,8 @@ layout: post
 title:  "Starting Fresh"
 author: oaguy1
 date:   2024-01-07 17:04:30 -0500
-categories: medium blogging
+categories: meta
+tags: medium blogging
 ---
 
 After several years of blogging on Medium, I have made the decision to leave and start my own blog. I am fully aware that I will not receive the same level of views or exposure, but what I will have is complete ownership of my thoughts and writings.

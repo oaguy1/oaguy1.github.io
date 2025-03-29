@@ -3,7 +3,8 @@ layout: post
 title:  "Going Deeper"
 author: oaguy1
 date:   2024-11-20 06:19:16 -0500
-categories: learning
+categories: meta
+tags: learning thinking
 ---
 
 I've found myself focusing on nothing lately. By "nothing," I don't mean devoid of anything, but rather allocating my time to trivial pursuits  that do not enrich my life. I've been mindlessly scrolling and not going deep into an subject matter. Some of this is natural as the year winds down and we begin to enter the darker winter months here in the northern hemisphere, but it didn't sit well with me.
